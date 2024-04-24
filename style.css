@@ -19,14 +19,13 @@ nav .nav-bar .logo img{
 }
 .nav-bar .drop{
     position: relative;
-    top: 10px;
+    top: 5px;
 }
 .nav-bar .drop .icon{
     width: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
-    margin-bottom: 10px;
     cursor: pointer;
 
 }
@@ -49,17 +48,33 @@ nav .nav-bar .logo img{
     margin-bottom: 5px;
     height: 2px;
 }
+span:last-child{
+    margin-bottom: -5px;
+}
 .nav-bar .drop ul{
     position: absolute;
     list-style: none;
     background-color: #F6F6F6;
     width: 200px;
     text-align: center;
-    right: 5px;
+    right: 1px;
     display: none;
+    margin-top: 15px;
+    border: 1px solid black;
     
     
 }
+.nav-bar .drop ul::before{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+    
+}
+
 .nav-bar .drop:hover ul{
     display: block;
     transition: all 0.5s ease-in-out;
@@ -98,4 +113,35 @@ nav .nav-bar .logo img{
     width: 15%;
     margin: auto;
     font-weight: 200;
+}
+.main {
+    background-color: rgba(205, 216, 212, 0.267);
+}
+.exper{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.exper div{
+    padding: 20px;
+    
+}
+.exper i{
+    font-size: 50px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: #10cab7;
+
+}
+.exper h2{
+    margin-bottom: 20px;
+}
+.exper p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    color: #10cab7;
+    margin-bottom: 50px;
 }
