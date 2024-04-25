@@ -1,5 +1,5 @@
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Work Sans",sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -113,6 +113,7 @@ span:last-child{
     width: 15%;
     margin: auto;
     font-weight: 200;
+    color: #333333d0;
 }
 .main {
     background-color: rgba(205, 216, 212, 0.267);
@@ -139,9 +140,85 @@ span:last-child{
     margin-bottom: 20px;
 }
 .exper p{
-    width: 60%;
+    width: 90%;
     margin: auto;
     font-size: 20px;
     color: #10cab7;
     margin-bottom: 50px;
+}
+.service{
+    margin-top: 100px;
+    height: 800px;
+}
+.service .title{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.service .title h2{
+    font-size: 120px;
+    letter-spacing: -10px;
+    font-weight: bolder;
+    color: #8d878750;
+}
+.service .title p{
+    font-size: 20px;
+    margin-top: -35px;
+}
+.explane{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.explane .col{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.explane .col .srv{
+    display: flex;
+    margin-bottom: 50px;
+}
+.explane .col .srv i{
+    flex-basis: 150px;
+    font-size: 35px;
+    color: #10CAB7;
+}
+.explane .col .text h3{
+    margin-bottom: 25px;
+}
+.explane .col .text p{
+    line-height: 30px;
+    color: #10CAB7;
+}
+.explane .col .pic {
+    margin-left: 80px;
+    text-align: center;
+    position: relative;
+}
+.explane .col .pic img{
+    width: 260px;
+    transition: all .5s ease-in-out;
+}
+.explane .col .pic::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: calc(100% + 70px);
+    top: -50px;
+    right: -10px;
+    background-color: #2C4755;
+    z-index: -1;
+    transition: all .5s ease-in-out;
+
+}
+.explane .col .pic:hover::before {
+    width: calc(100% + 20px);
+    
+
+}
+.explane .col .pic:hover img{
+    transform: scale(1.1);
+    border: 1px solid white;
+    box-shadow: 1px 1px 10px 1px whitesmoke;
 }
