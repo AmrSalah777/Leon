@@ -3,6 +3,75 @@
     margin: 0;
     padding: 0;
 }
+@media (max-width: 767px) {
+    .exper {
+            width: 760px;
+            flex-wrap: wrap;
+        }
+        .explane .col{
+            grid-template-rows: repeat(760px ,1fr);
+        }
+                .explane .col .pic {
+                    display: none;
+
+                }
+        .service .explane {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .portfolio{
+            margin-top: 300px;
+                margin-bottom: 200px;
+                
+        }
+        .portfolio .porto-card{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .about{
+            margin-top: 900px;
+            text-align: center;
+
+        }
+        .about .about-content{
+            width: 100%;
+            
+        }
+                .about .about-content .about-pic{
+                    display: none;
+                }
+}
+@media (min-width: 768px) and (max-width:991px){
+    .exper {
+            width: 760px;
+            flex-wrap: wrap;
+        }
+    
+        .explane .col {
+            grid-template-rows: repeat(760px, 1fr);
+        }
+                .explane .col .pic {
+                    display: none;
+        
+                }
+        
+                .service .explane {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+        
+                }
+            
+        
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
 
 .nav-bar{
     display: flex;
